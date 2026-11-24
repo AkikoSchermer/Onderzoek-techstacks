@@ -1,16 +1,17 @@
 ---
 pagination: 
   data: testdata
-  size: 2
+  size: 1
   alias: wonder
 testdata:
   - item1
   - item2
   - item3
+permalink: "test/{{ wonder | slugify }}/index.html"
 ---
 
 <p> {{wonder}}</p>
 
-{% for item in wonder %}
+<!-- {% for item in wonder %}
 <p> {{item}}</p>
-{% endfor %}
+{% endfor %} -->
