@@ -1,9 +1,15 @@
+---
+pagination: 
+  data: snaps
+  size: 1
+  alias: snap
+permalink: "snap-detail/{{snap.uuid}}/index.html"
+---
+
 {% extends "layouts/base.html" %}
 
 {% block content %}
 
-
-<p> Hier komt 1 snap van de user </p>
-
+<img src="https://fdnd-agency.directus.app/assets/{{snap.picture}}" alt="">
 
 {% endblock %}

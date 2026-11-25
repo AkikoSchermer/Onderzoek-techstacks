@@ -5,7 +5,10 @@
 <h1> Welkom op mijn website</h1>
 
 
-<a href="/snap-detail">Bekijk snap </a>
+{% for snap in snaps %}
+<a href="/snap-detail/{{snap.uuid}}/">Bekijk snap </a>
+{% endfor %}
+
 <p>{{ user.name}}
 </p>
 

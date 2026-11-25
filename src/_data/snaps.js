@@ -11,6 +11,6 @@ let json = await Fetch(snapurl, {
     type: "json",
 });
 
-console.log("aantal snaps:", json.data.length);
+console.log("eerste snaps:", json.data[0]);
 return json.data;
 }
